@@ -2,7 +2,11 @@ img {
   margin: 35px;
 }
 body {
-  <font-family: chewy, "Times New Roman," serif;>
+  font-family: chewy, "Times New Roman," serif;
+}
+}
+  img.rounded-corners {
+    border-radius: 30px;
 }
 
 
