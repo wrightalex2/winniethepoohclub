@@ -1,12 +1,6 @@
 img {
   margin: 35px;
 }
-body {
+p {
   font-family: chewy, "Times New Roman," serif;
 }
-}
-  img.rounded-corners {
-    border-radius: 30px;
-}
-
-
