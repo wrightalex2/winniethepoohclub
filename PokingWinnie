@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <script>
-<div id="counter">
-        <!-- counts -->
-    </div>
-  
-    <script id="pokingwinnie">
-        let counts=setInterval(updated);
-        let upto=0;
-        function updated(){
-            var count= document.getElementById("counter");
-            count.innerHTML=++upto;
-            if(upto===1000)
-            {
-                clearInterval(counts);
-            }
-        }
-    </script>
-    </head>
-    <body>
-    </body>
-    </html>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Poke me!</button></p>
+<div id="result"></div>
+<
+
+</body>
+</html>
