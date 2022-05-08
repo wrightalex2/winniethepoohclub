@@ -1,10 +1,13 @@
-IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
+div.container4 {
+    height: 10em;
+    position: relative 
 }
-P.blocktext {
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em
+div.container4 p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
 }
