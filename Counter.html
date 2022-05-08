@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have poked Winnie the Pooh " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+<body>
+
+<p><img id="winnie_img" src="Winnie.jpg" alt="Angry Winnie the Pooh" button onclick="clickCounter()" type="button">Stop poking me!</img></p>
+<input type="text" id="winnie" value="0"></input>
+<div id="result"></div>
+</body>
+</html>
