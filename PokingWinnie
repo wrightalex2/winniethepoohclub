@@ -6,7 +6,7 @@
         <!-- counts -->
     </div>
   
-    <script>
+    <script id="pokingwinnie">
         let counts=setInterval(updated);
         let upto=0;
         function updated(){
