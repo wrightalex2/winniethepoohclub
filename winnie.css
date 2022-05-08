@@ -34,5 +34,8 @@ img {
 .topnav .icon {
   display: none;
 }
-
+p {
+  font: 28px;
+  font-weight: bolder;
+}
 
